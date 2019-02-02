@@ -2,6 +2,9 @@
 Created on 2 Feb 2019
 
 @author: Devel
+
+A Python GUI can be made with just 4 lines of code
+
 '''
 import tkinter as tk 
 
