@@ -48,9 +48,18 @@ weather_conditions_frame = ttk.LabelFrame(
 
 # tkinter grid layout manager
 weather_conditions_frame.grid(column=0, row=0, padx=8, pady=4)
+
 ttk.Label(weather_conditions_frame, 
           text="Location:").grid(column=0, row=0, sticky='W')
 
+
+city = tk.StringVar()
+citySelected = ttk.Combobox(weather_conditions_frame, width=15, textvar = city)
+
+citySelected['values'] = ('Leeds', 'Manchester', 'London', 'Bristol', 'Birmingham')
+
+citySelected.grid(column=1, row=0)
+citySelected.current(0)
 
 # App Start
 win.mainloop()
