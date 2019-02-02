@@ -1,8 +1,14 @@
+'''
+Created on 2 Feb 2019
+
+@author: Luke McCann
+'''
+
 from enum import Enum
 
 class MapSite():
     def Enter(self):
-        raise NotImplementedError('Abstract Base Class method')
+        raise NotImplementedError('Abstract Base class method not implemented')
     
 class Direction(Enum):
     North = 0
@@ -80,9 +86,6 @@ class MazeGame():
         
         return aMaze
     
-#===================================================
-# Self-testing section    
-#===================================================
 if __name__ == '__main__':
 #     map_site_inst = MapSite()
 #     map_site_inst.Enter()
